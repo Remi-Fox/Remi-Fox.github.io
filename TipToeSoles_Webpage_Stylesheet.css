@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+}
+.sidebar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background: #FFD700; /*Keeping with the monochromatic theme of company logo*/
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sidebar a:hover {
+    background: #CCAC00;
+}
+.sidebar a:focus {
+    background-color: #CCAC00;
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    margin:auto; /*content scales in response to browser size*/
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-left: 270px;
+    margin-top: 90px;
+}
+.main-content img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    width: calc(100% - 270px);
+    top: 0;
+    left: 240px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+/* Logo Styling */
+.header img {
+    max-width: 150px; /* Maintains a reasonable size, otherwise it explodes to cover the whole screen!!*/
+    height: auto;
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .header img {
+        max-width: 100px; /* Scales down for mobile browsers*/
+        height: 60px;
+    }
+    .main-content {
+        margin-top: 70px;
+    }
+}
+/* Search, Login, Cart Section */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.search-box {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    background: #FFD700;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 120px;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background: #CCAC00;
+}
+
+/* Banner Image */
+.banner {
+    width: calc(100% - 40px);
+    height: 300px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+/* Two-Column Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-container .btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 240px;
+    width: calc(100% - 240px);
+}
+.footer a {
+    color: #CCAC00;
+}
