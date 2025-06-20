@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TipToe Soles - About Us</title>
-    <link rel="stylesheet" href="TipToeSoles_Webpage_Stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TipToe Soles - About Us</title>
+  <link rel="stylesheet" href="TipToeSoles_Webpage_Stylesheet.css" />
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html" class="active">About Us</a>
-        <a href="contact.html">Contact Us</a>
+  <!-- Navigation Landmark -->
+  <nav class="sidebar" role="navigation">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Header Landmark -->
+  <header class="header" role="banner">
+    <a href="index.html">
+      <img src="Images/TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background." />
+    </a>
+    <div class="header-controls">
+      <input type="text" class="search-box" placeholder="Search" />
+      <button class="btn">Login</button>
+      <button class="btn">Cart</button>
     </div>
+  </header>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Header -->
-        <div class="header">
-            <a href="index.html">
-                <img src="Images\TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background.">
-            </a>
-            <div class="header-controls">
-                <input type="text" class="search-box" placeholder="Search">
-                <button class="btn">Login</button>
-                <button class="btn">Cart</button>
-            </div>
-        </div>
+  <!-- Main Content Landmark -->
+  <main class="main-content" role="main">
+    <!-- Banner -->
+    <section class="banner" aria-label="Company Story Banner">
+      <p>Our Story</p>
+    </section>
 
-        <!-- Banner Image -->
-        <div class="banner">
-            <p>Our Story</p>
-        </div>
+    <!-- About Section -->
+    <section class="about-container" aria-labelledby="about-heading">
+      <div class="about-text">
+        <h2 id="about-heading">About TipToe Soles</h2>
+        <p>TipToe Soles is an Australian owned and operated company. We aim to provide comfortable footwear at affordable prices to customers within Australia and around the world.</p>
+      </div>
+      <div class="about-image">
+        <img src="Images/TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background." />
+      </div>
+    </section>
+  </main>
 
-        <!-- About Us Content -->
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About TipToe Soles</h2>
-                <p>TipToe Soles is an Australian owned and operated company. We aim to provide comfortable footwear at affordable prices to customers within Australia and around the world.</p>
-            </div>
-            <div class="about-image">
-                <img src="Images/TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background.">
-            </div>
-        </div>
+  <!-- Footer Landmark -->
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 TipToe Soles - All Rights Reserved</p>
+    <div class="footer-icons">
+      <a href="returns.html">Return Policy</a>
+      <a href="exchanges.html">Exchange Policy</a>
+      <a href="faq.html">FAQ</a>
+      <a href="facebook.html">Facebook</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter.html">X</a>
     </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 TipToe Soles - All Rights Reserved</p>
-        <div class="footer-icons">
-            <a href="returns.html">Return Policy</a>
-            <a href="exchanges.html">Exchange Policy</a>
-            <a href="faq.html">FAQ</a>
-            <a href="facebook.html">Facebook</a>
-            <a href="instagram.html">Instagram</a>
-            <a href="twitter.html">X</a>
-        </div>
-    </div>
+  </footer>
 
 </body>
 </html>
