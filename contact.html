@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TipToe Soles - Contact Us</title>
-    <link rel="stylesheet" href="TipToeSoles_Webpage_Stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TipToe Soles - Contact Us</title>
+  <link rel="stylesheet" href="TipToeSoles_Webpage_Stylesheet.css" />
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html" class="active">Contact Us</a>
+  <!-- Navigation Landmark -->
+  <nav class="sidebar" role="navigation">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="active">Contact Us</a>
+  </nav>
+
+  <!-- Header Landmark -->
+  <header class="header" role="banner">
+    <a href="index.html">
+      <img src="Images/TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background." />
+    </a>
+    <div class="header-controls">
+      <input type="text" class="search-box" placeholder="Search" />
+      <button class="btn">Login</button>
+      <button class="btn">Cart</button>
     </div>
+  </header>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="header">
-            <a href="index.html">
-                <img src="Images\TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background.">
-            </a>
-            <div class="header-controls">
-                <input type="text" class="search-box" placeholder="Search">
-                <button class="btn">Login</button>
-                <button class="btn">Cart</button>
-            </div>
-        </div>
+  <!-- Main Content Landmark -->
+  <main class="main-content" role="main">
 
-        <div class="banner">
-            <p>Get in Touch</p>
-        </div>
+    <!-- Contact Intro Banner -->
+    <section class="banner" aria-label="Get in Touch Banner">
+      <p>Get in Touch</p>
+    </section>
 
-        <!-- Contact Form -->
-        <div class="contact-container">
-            <h2>Contact Us</h2>
-            <p>Have a question? Fill out the form below and we'll get back to you as soon as possible.</p>
-            <form action="submit_contact.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <!-- Contact Form Section -->
+    <section class="contact-container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p>Have a question? Fill out the form below and we'll get back to you as soon as possible.</p>
+      <form action="submit_contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
 
-        <!-- Contact Details -->
-        <div class="contact-info">
-            <h2>Our Contact Details</h2>
-            <p>Email: TipToeShoes@gmail.com</p>
-            <p>Phone: 02 9210 5000</p>
-            <p>Address: 322 Avondale Road Enfield NSW 2133</p>
-        </div>
+    <!-- Contact Info Section -->
+    <section class="contact-info" aria-labelledby="contact-info-heading">
+      <h2 id="contact-info-heading">Our Contact Details</h2>
+      <p>Email: TipToeShoes@gmail.com</p>
+      <p>Phone: 02 9210 5000</p>
+      <p>Address: 322 Avondale Road Enfield NSW 2133</p>
+    </section>
+
+  </main>
+
+  <!-- Footer Landmark -->
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 TipToe Soles - All Rights Reserved</p>
+    <div class="footer-icons">
+      <a href="returns.html">Return Policy</a>
+      <a href="exchanges.html">Exchange Policy</a>
+      <a href="faq.html">FAQ</a>
+      <a href="facebook.html">Facebook</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter.html">X</a>
     </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 TipToe Soles - All Rights Reserved</p>
-        <div class="footer-icons">
-            <a href="returns.html">Return Policy</a>
-            <a href="exchanges.html">Exchange Policy</a>
-            <a href="faq.html">FAQ</a>
-            <a href="facebook.html">Facebook</a>
-            <a href="instagram.html">Instagram</a>
-            <a href="twitter.html">X</a>
-        </div>
-    </div>
+  </footer>
 
 </body>
 </html>
