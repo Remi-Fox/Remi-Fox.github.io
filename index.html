@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TipToe Soles - Home</title>
-    <link rel="stylesheet" href="TipToeSoles_Webpage_Stylesheet.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TipToe Soles - Home</title>
+  <link rel="stylesheet" href="TipToeSoles_Webpage_Stylesheet.css" />
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+  <!-- Navigation Landmark -->
+  <nav class="sidebar" role="navigation">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Header Landmark -->
+  <header class="header" role="banner">
+    <a href="index.html">
+      <img src="Images/TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background." />
+    </a>
+    <div class="header-controls">
+      <input type="text" class="search-box" placeholder="Search" />
+      <button class="btn">Login</button>
+      <button class="btn">Cart</button>
     </div>
+  </header>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Header -->
-        <div class="header">
-            <a href="index.html">
-                <img src="Images\TipToe Soles_Logo_colour.png" alt="TipToe Soles Company Logo of two white feet in a raised poise on a yellow background.">
-            </a>
+  <!-- Main Content Landmark -->
+  <main class="main-content" role="main">
 
-            <div class="header-controls">
-                <input type="text" class="search-box" placeholder="Search">
-                <button class="btn">Login</button>
-                <button class="btn">Cart</button>
-            </div>
-        </div>
+    <!-- Hero Banner Section -->
+    <section class="banner" aria-label="Hero Banner">
+      <p>Banner Image Here</p>
+    </section>
 
-        <!-- Banner Image -->
-        <div class="banner">
-            <p>Banner Image Here</p>
-        </div>
+    <!-- Content Columns -->
+    <section class="container" aria-labelledby="home-columns">
+      <h2 id="home-columns" class="visually-hidden">Homepage Highlights</h2>
+      <div class="column">
+        <h3>Content for Column 1</h3>
+        <p>abcdefg</p>
+      </div>
+      <div class="column">
+        <h3>Content for Column 2</h3>
+        <p>abcdefg</p>
+      </div>
+    </section>
+  </main>
 
-        <!-- Two Columns -->
-        <div class="container">
-            <div class="column">
-                <h3>Content for Column 1</h3>
-                <p>abcdefg</p>
-            </div>
-            <div class="column">
-                <h3>Content for Column 2</h3>
-                <p>abcdefg</p>
-            </div>
-        </div>
+  <!-- Footer Landmark -->
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 TipToe Soles - All Rights Reserved</p>
+    <div class="footer-icons">
+      <a href="returns.html">Return Policy</a>
+      <a href="exchanges.html">Exchange Policy</a>
+      <a href="faq.html">FAQ</a>
+      <a href="facebook.html">Facebook</a>
+      <a href="instagram.html">Instagram</a>
+      <a href="twitter.html">X</a>
     </div>
+  </footer>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 TipToe Soles - All Rights Reserved</p>
-        <div class="footer-icons">
-            <a href="returns.html">Return Policy</a>
-            <a href="exchanges.html">Exchange Policy</a>
-            <a href="faq.html">FAQ</a>
-            <a href="facebook.html">Facebook</a>
-            <a href="instagram.html">Instagram</a>
-            <a href="twitter.html">X</a>
-        </div>
-    </div>
 </body>
 </html>
